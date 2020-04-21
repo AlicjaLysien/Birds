@@ -1,0 +1,150 @@
+body
+{
+	background-color: rgb(220, 255, 197);
+	color: #07500d;
+    font-size: 20px;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 600;
+	color: rgb(0, 78, 20);
+	margin: 20px;
+}
+
+.birds
+{
+	text-align: center;
+}
+
+.birds img
+{
+	width: 100%;
+    height: auto;
+    border: black 3px solid;
+}
+/* w bootstrapie class="img-fluid" */
+
+.birds p
+{
+	margin-bottom: 30px;
+}
+
+.birds figcaption
+{
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    border-bottom: black 3px solid;
+    border-right: black 3px solid;
+    border-left: black 3px solid;
+}
+
+.navbar 
+{
+    border-bottom: #07500d solid 4px;
+}
+
+/* dropdown widoczny po najechaniu mysza (skacze menu)
+w bootstrpie nie jest to nastawione
+
+.navbar-nav li:hover>.dropdown-menu
+{
+display:block;
+}
+
+*/
+
+.navbar
+{
+    min-height: 66px;
+}
+
+#small_menu > .list-group > .list-group-item
+{
+    font-size: 16px;
+padding-top: 2px;
+padding-bottom: 2px;
+}
+
+#small_menu
+{
+    margin-bottom: 5px;
+}
+
+.my_article
+{
+    text-align: justify;
+    font-size: 16px;
+    padding: 30px;
+}
+
+#menu_birds a
+{
+color: #07500d;
+text-decoration: none;
+}
+
+#menu_birds a:hover
+{
+color: rgb(51, 134, 42);
+text-decoration: none;
+}
+
+@media (max-width: 575px)
+{
+    .my_article
+    {
+        margin: 40px 20px;
+        text-align: left;
+        font-size: 14px;
+        padding: 30px;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px){
+    #menu_birds > .list-inline-item
+    {
+        text-align: left;
+        display: block;
+    }
+}
+
+ol > ul > li
+{
+    list-style-type: square !important;
+}
+
+
+/* Cervenka */
+
+
+@media (max-width: 575px)
+{
+    .cervenka_img04
+{
+    max-width: 50%;
+    height: auto;
+}
+.cervenka_img05
+{
+    max-width: 40%;
+    height: auto;
+}
+}
+
+@media (min-width: 576px)
+{
+.cervenka_img04
+{
+    width: 30%;
+    height: auto;
+}
+.cervenka_img05
+{
+    width: 20%;
+    height: auto;
+}
+}
+/* Cervenka */
