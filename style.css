@@ -1,3 +1,25 @@
+body::-webkit-scrollbar
+{
+    width:12px;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-track
+{
+    background-color: rgb(198, 219, 184);
+}
+
+body::-webkit-scrollbar-corner
+{
+    background-color: rgb(220, 255, 197);
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: #07500d;
+    border-radius: 20px;
+}
+
 body
 {
 	background-color: rgb(220, 255, 197);
