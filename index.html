@@ -1,216 +1,186 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Birds World!</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <title>Birds World!</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-
-	
-	
-  </head>
 <body>
-
   <header>
-<nav class="navbar bg-white navbar-light navbar-expand-lg">  <!-- albo <div role="navigation"> -->
-
-<a class="navbar-brand" href="#">
-<img src="img/logo.png" width="30" height="30" class="d-inline-block mr-sm-2 align-bottom"> LoveBirds.com
-</a>
-
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" 
-aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">  
-  <!-- class="order-first" spowoduje ze guzik bedzie pierwszy -->
-  <span class="navbar-toggler-icon">
- </span>
-</button>
-
-
-<div class="collapse navbar-collapse" id="mainmenu">
-<ul class="navbar-nav mr-auto">
-  
-  <li class="nav-item">
-    <a class="nav-link" href="#">About</a>
-  </li>
- 
-  <li class="nav-item active">
-    <a class="nav-link" href="index.html">Our birds</a>
-  </li>
- 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" 
-    aria-expanded="false" id="submenu_ptojects" aria-haspopup="true">Projects</a>
-    
-    <div class="dropdown-menu" aria-labelledby="submenu_ptojects">
-      <a class="dropdown-item" href="#">2017</a>
-        <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">2018</a>
-        <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">2019</a>
-    </div>
- 
-  </li>
-  
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" 
-    aria-expanded="false"  id="submenu_photos" aria-haspopup="true">Photos</a>
-    
-    <div class="dropdown-menu" aria-labelledby="submenu_photos">
-      <a class="dropdown-item" href="#">City</a>
-        <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Forest</a>
-        <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Sea</a>
-    </div>
- 
-  </li>
-  
-  <li class="nav-item">
-    <a class="nav-link" href="#">Contact</a>
-  </li>
-
-</ul>
-
-
-<form class="form-inline">
-<input class="form-control mr-2" type="search" placeholder="Search" aria-label="search">
-<button class="btn btn-light" type="submit">Ok</button>
-  </form>
-
-</div>
-
-
-
-</nav>
-
+    <nav class="navbar bg-white navbar-light navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="30" height="30" class="d-inline-block mr-sm-2 align-bottom"> LoveBirds.com
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+        aria-controls="mainmenu" aria-expanded="false" aria-label="navigace">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainmenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Our birds</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+              id="submenu_ptojects" aria-haspopup="true">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="submenu_ptojects">
+              <a class="dropdown-item" href="#">2017</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">2018</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">2019</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+              id="submenu_photos" aria-haspopup="true">Photos</a>
+            <div class="dropdown-menu" aria-labelledby="submenu_photos">
+              <a class="dropdown-item" href="#">City</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Forest</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sea</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-2" type="search" placeholder="Search" aria-label="search">
+          <button class="btn btn-light" type="submit">Ok</button>
+        </form>
+      </div>
+    </nav>
   </header>
-  
+
   <main>
-		
-		<section class="birds">
+    <section class="birds">
+      <div class="container">
+          <h1>We love brids!</h1>
+          <p>Let's see the birds below and learn more about them.</p>
+          <div class="row">
 
+          <!-- 01 -->
+          <div class="col-sm-6 col-md-5 offset-md-1"> <!-- w starych wersjach col-md-offset-1-->
+            <figure>
+              <a href="#"> <img alt="Vlastovka" src="img/img01.png"> </a>
+              <figcaption>Vlastovka</figcaption>
+            </figure>
+          </div>
 
-<div class="container">
-  <header>
-    <h1>We love brids!</h1>
-    <p>Let's see the birds below and learn more about them.</p>
-    </header>
-    
-<div class="row"> <!-- row no-gutters, usuwa odstepy-->
+          <!-- 02 -->
+          <div class="col-sm-6 col-md-5">
+            <figure>
+              <a href="cervenka.html"> <img alt="Cervenka" src="img/img02.png"> </a>
+              <figcaption>Cervenka</figcaption>
+            </figure>
+          </div>
 
-  <!-- 01 -->
-  <div class="col-sm-6 col-md-5 offset-md-1">    <!-- w starych wersjach col-md-offset-1-->
-  <figure>
-   <a href="#"> <img src="img/img01.png"> </a>
-   <figcaption>Vlastovka</figcaption>
-  </figure>
-</div>
+          <!-- 03 -->
+          <div class="col-sm-6 col-md-4">
+            <figure>
+              <a href="#"> <img alt="Sojka" src="img/img03.png"> </a>
+              <figcaption>Sojka</figcaption>
+            </figure>
+          </div>
 
-  <!-- 02 -->
-  <div class="col-sm-6 col-md-5">
-    <figure>
-     <a href="cervenka.html"> <img src="img/img02.png"> </a>
-     <figcaption>Cervenka</figcaption>
-    </figure>
-  </div>
+          <!-- 04 -->
+          <div class="col-sm-6 col-md-4">
+            <figure>
+              <a href="#"> <img alt="Stehlik" src="img/img04.png"> </a>
+              <figcaption>Stehlik</figcaption>
+            </figure>
+          </div>
 
-    <!-- 03 -->
-<div class="col-sm-6 col-md-4">
-  <figure>
-   <a href="#"> <img src="img/img03.png"> </a>
-   <figcaption>Sojka</figcaption>
-  </figure>
-</div>
+          <!-- 05 -->
+          <div class="col-sm-6 col-md-4">
+            <figure>
+              <a href="#"> <img alt="Drozd" src="img/img05.png"> </a>
+              <figcaption>Drozd</figcaption>
+            </figure>
+          </div>
 
-  <!-- 04 -->
-  <div class="col-sm-6 col-md-4">
-    <figure>
-     <a href="#"> <img src="img/img04.png"> </a>
-     <figcaption>Stehlik</figcaption>
-    </figure>
-  </div>
+          <!-- 06 -->
+          <div class="col-sm-6 col-md-4">
+            <figure>
+              <a href="#"> <img alt="Kralicek" src="img/img06.png"> </a>
+              <figcaption>Kralicek</figcaption>
+            </figure>
+          </div>
 
-    <!-- 05 -->
-<div class="col-sm-6 col-md-4">
-  <figure>
-   <a href="#"> <img src="img/img05.png"> </a>
-   <figcaption>Drozd</figcaption>
-  </figure>
-</div>
+          <!-- 07 -->
+          <div class="col-sm-6 col-md-4">
+            <figure>
+              <a href="#"> <img alt="Konipasek" src="img/img07.png"> </a>
+              <figcaption>Konipasek</figcaption>
+            </figure>
+          </div>
 
-  <!-- 06 -->
-  <div class="col-sm-6 col-md-4">
-    <figure>
-     <a href="#"> <img src="img/img06.png"> </a>
-     <figcaption>Kralicek</figcaption>
-    </figure>
-  </div>
+          <!-- 08 -->
+          <div class="col-sm-6 col-md-4">
+            <figure>
+              <a href="#"> <img alt="Brkoslav" src="img/img08.png"> </a>
+              <figcaption>Brkoslav</figcaption>
+            </figure>
+          </div>
 
-    <!-- 07 -->
-<div class="col-sm-6 col-md-4">
-  <figure>
-   <a href="#"> <img src="img/img07.png"> </a>
-   <figcaption>Konipasek</figcaption>
-  </figure>
-</div>
+          <!-- 09 -->
+          <div class="col-sm-6 col-md-3">
+            <figure>
+              <a href="#"> <img alt="Cizek" src="img/img09.png"> </a>
+              <figcaption>Cizek</figcaption>
+            </figure>
+          </div>
 
-  <!-- 08 -->
-  <div class="col-sm-6 col-md-4">
-    <figure>
-     <a href="#"> <img src="img/img08.png"> </a>
-     <figcaption>Brkoslav</figcaption>
-    </figure>
-  </div>
+          <!-- 10 -->
+          <div class="col-sm-6 col-md-3">
+            <figure>
+              <a href="#"> <img alt="Rehek" src="img/img10.png"> </a>
+              <figcaption>Rehek</figcaption>
+            </figure>
+          </div>
 
-    <!-- 09 -->
-<div class="col-sm-6 col-md-3">
-  <figure>
-   <a href="#"> <img src="img/img09.png"> </a>
-   <figcaption>Cizek</figcaption>
-  </figure>
-</div>
+          <!-- 11 -->
+          <div class="col-sm-6 col-md-3">
+            <figure>
+              <a href="#"> <img alt="Hyl" src="img/img11.png"> </a>
+              <figcaption>Hyl</figcaption>
+            </figure>
+          </div>
 
-  <!-- 10 -->
-  <div class="col-sm-6 col-md-3">
-    <figure>
-     <a href="#"> <img src="img/img10.png"> </a>
-     <figcaption>Rehek</figcaption>
-    </figure>
-  </div>
+          <!-- 12 -->
+          <div class="col-sm-6 col-md-3">
+            <figure>
+              <a href="#"> <img alt="Spacek" src="img/img12.png"> </a>
+              <figcaption>Spacek</figcaption>
+            </figure>
+          </div>
 
-    <!-- 11 -->
-<div class="col-sm-6 col-md-3"> 
-  <figure>
-   <a href="#"> <img src="img/img11.png"> </a>
-   <figcaption>Hyl</figcaption>
-  </figure>
-</div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <!-- 12 -->
-  <div class="col-sm-6 col-md-3">
-    <figure>
-     <a href="#"> <img src="img/img12.png"> </a>
-     <figcaption>Spacek</figcaption>
-    </figure>
-  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
-</div>
-</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
 
-</section>
-  
-
-</main>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-<script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 <!-- 
 img01 - https://www.fakt.pl/wydarzenia/polska/lada-dzien-odleca-bociany-jaskolki-wilgi-kukulki-i-labedzie/lxn7dqv

@@ -1,5 +1,8 @@
 # Birds
-
-The project is a play with bootstrap styles and frameworks.
-All source web sites of used photos are based on my html code in the comment section.
+The project contains two pages:
 https://alicjalysien.github.io/Birds/
+https://alicjalysien.github.io/Birds/cervenka.html
+
+## About
+This is one of my first project which was done as a selfstudy of bootstrap library.
+All reused photos and data are put as comment into a code.

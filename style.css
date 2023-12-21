@@ -1,6 +1,6 @@
 body::-webkit-scrollbar
 {
-    width:12px;
+    width: 12px;
     height: 12px;
 }
 
@@ -46,7 +46,6 @@ h1
     height: auto;
     border: black 3px solid;
 }
-/* w bootstrapie class="img-fluid" */
 
 .birds p
 {
@@ -69,16 +68,6 @@ h1
     border-bottom: #07500d solid 4px;
 }
 
-/* dropdown widoczny po najechaniu mysza (skacze menu)
-w bootstrpie nie jest to nastawione
-
-.navbar-nav li:hover>.dropdown-menu
-{
-display:block;
-}
-
-*/
-
 .navbar
 {
     min-height: 66px;
@@ -87,8 +76,8 @@ display:block;
 #small_menu > .list-group > .list-group-item
 {
     font-size: 16px;
-padding-top: 2px;
-padding-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 #small_menu
@@ -105,14 +94,14 @@ padding-bottom: 2px;
 
 #menu_birds a
 {
-color: #07500d;
-text-decoration: none;
+    color: #07500d;
+    text-decoration: none;
 }
 
 #menu_birds a:hover
 {
-color: rgb(51, 134, 42);
-text-decoration: none;
+    color: rgb(51, 134, 42);
+    text-decoration: none;
 }
 
 @media (max-width: 575px)
@@ -138,35 +127,32 @@ ol > ul > li
     list-style-type: square !important;
 }
 
-
 /* Cervenka */
-
-
 @media (max-width: 575px)
 {
     .cervenka_img04
-{
-    max-width: 50%;
-    height: auto;
-}
-.cervenka_img05
-{
-    max-width: 40%;
-    height: auto;
-}
+    {
+        max-width: 50%;
+        height: auto;
+    }
+    .cervenka_img05
+    {
+        max-width: 40%;
+        height: auto;
+    }
 }
 
 @media (min-width: 576px)
 {
-.cervenka_img04
-{
-    width: 30%;
-    height: auto;
-}
-.cervenka_img05
-{
-    width: 20%;
-    height: auto;
-}
+    .cervenka_img04
+    {
+        width: 30%;
+        height: auto;
+    }
+    .cervenka_img05
+    {
+        width: 20%;
+        height: auto;
+    }
 }
 /* Cervenka */

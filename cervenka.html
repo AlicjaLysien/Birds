@@ -1,271 +1,236 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-    <title>Cervenka</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-
-	
-  
-    <script type="text/javascript">
-   
-      var banner_number = Math.floor(Math.random()*4)+1;  
-      function changebanner()
-      {
-        banner_number++; if(banner_number>4) banner_number=1;
-      var banner_photo = "<img src=\"img/banner/banner0" + banner_number + ".png\"/ class=\"img-fluid\">"; 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cervenka</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    var banner_number = Math.floor(Math.random() * 4) + 1;
+    function changebanner() {
+      banner_number++; if (banner_number > 4) banner_number = 1;
+      var banner_photo = "<img src=\"img/banner/banner0" + banner_number + ".png\"/ class=\"img-fluid\">";
       document.getElementById("change_banner").innerHTML = banner_photo;
       setTimeout("changebanner()", 10000);
-      }
-      
-      </script> 
+    }
+  </script>
+</head>
 
-  </head>
 <body onload="changebanner()">
-
   <header>
-<nav class="navbar bg-white navbar-light navbar-expand-lg">  <!-- albo <div role="navigation"> -->
-
-<a class="navbar-brand" href="#">
-<img src="img/logo.png" width="30" height="30" class="d-inline-block mr-sm-2 align-bottom"> LoveBirds.com
-</a>
-
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" 
-aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">  
-  <!-- class="order-first" spowoduje ze guzik bedzie pierwszy -->
-  <span class="navbar-toggler-icon">
- </span>
-</button>
-
-
-<div class="collapse navbar-collapse" id="mainmenu">
-<ul class="navbar-nav mr-auto">
-  
-  <li class="nav-item">
-    <a class="nav-link" href="#">About</a>
-  </li>
- 
-  <li class="nav-item active">
-    <a class="nav-link" href="index.html">Our birds</a>
-  </li>
- 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" 
-    aria-expanded="false" id="submenu_ptojects" aria-haspopup="true">Projects</a>
-    
-    <div class="dropdown-menu" aria-labelledby="submenu_ptojects">
-      <a class="dropdown-item" href="#">2017</a>
-        <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">2018</a>
-        <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">2019</a>
-    </div>
- 
-  </li>
-  
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" 
-    aria-expanded="false"  id="submenu_photos" aria-haspopup="true">Photos</a>
-    
-    <div class="dropdown-menu" aria-labelledby="submenu_photos">
-      <a class="dropdown-item" href="#">City</a>
-        <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Forest</a>
-        <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Sea</a>
-    </div>
- 
-  </li>
-  
-  <li class="nav-item">
-    <a class="nav-link" href="#">Contact</a>
-  </li>
-
-</ul>
-
-
-<form class="form-inline">
-<input class="form-control mr-2" type="search" placeholder="Search" aria-label="search">
-<button class="btn btn-light" type="submit">Ok</button>
-  </form>
-
-</div>
-
-</nav>
-
+    <nav class="navbar bg-white navbar-light navbar-expand-lg"> <!-- albo <div role="navigation"> -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="30" height="30" class="d-inline-block mr-sm-2 align-bottom"> LoveBirds.com
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+        aria-controls="mainmenu" aria-expanded="false" aria-label="Navigace">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainmenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Our birds</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+              id="submenu_ptojects" aria-haspopup="true">Projects</a>
+            <div class="dropdown-menu" aria-labelledby="submenu_ptojects">
+              <a class="dropdown-item" href="#">2017</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">2018</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">2019</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+              id="submenu_photos" aria-haspopup="true">Photos</a>
+            <div class="dropdown-menu" aria-labelledby="submenu_photos">
+              <a class="dropdown-item" href="#">City</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Forest</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sea</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-2" type="search" placeholder="Search" aria-label="search">
+          <button class="btn btn-light" type="submit">Ok</button>
+        </form>
+      </div>
+    </nav>
   </header>
-  
-
-
-
 
   <main>
-  
     <article>
-
-<div class="container">
-  <div class="row">
-
-    <aside class="col-12 text-center my-5">
-         <div id="change_banner" class="fluid">
-
-         </div>
-    </aside>
-
-    <aside class="col-12 mb-2 text-center d-lg-none" id="small_menu">
-      <ul class="list-group">
-        <a href="#rozsireni" class="list-group-item list-group-item-action">Rozšíření</a>
-        <a href="#popis" class="list-group-item list-group-item-action">Popis</a>
-        <a href="#rozmnozovani" class="list-group-item list-group-item-action">Rozmnožování</a>
-        <a href="#prostredi" class="list-group-item list-group-item-action">Prostředí</a>
-        <a href="#potrava" class="list-group-item list-group-item-action">Potrava</a>
-      </ul>
-      </aside>
-
-
-
-    <div class="col-lg-8 bg-white text-body mb-3 my_article">
-<header>
-<h1 class="h2 font-weight-bold text-uppercase ml-0 mb-4 text-center text-md-left">Cervenka</h1>
-</header>
-
-<h2 class="h3 mb-2" id="rozsireni">Rozšíření</h2>
-<p>Obývá většinu Evropy (kromě severu Skandinávie) od Irska přes Ural až po západní Sibiř. Jižní hranice rozšíření probíhá od severozápadní
-   Afriky do Malé Asie. Částečně tažný druh, zimující v západní a jižní Evropě a na jihozápadě Asie. Populace z jižní a západní Evropy jsou
-    většinou stálé. Evropská populace se v posledních letech mírně zvětšila a je považována za stabilní – čítá více než 43 mil. párů </p>
-    <img class="img-thumbnail  mr-3 mt-2 mb-4 cervenka_img03" src="img/cervenka/cervenka03.png" alt="mapa">
-<h3 class="h5 mb-2">Výskyt v Česku</h3>
-<p>V České republice pravidelně hnízdí, protahuje; někdy zimuje (1000–2000 jedinců). Žije na celém území od nížin po horní hranici lesa v 
-  horách. Početnost podle Hudce a kol. (1995) je 500 000 až 1 mil. hnízdících párů. Početnost v letech 2001–2003 je shodná.[4] V ČR patří mezi 
-  15 nejběžnějších ptáků.</p>
-<h2 class="h3 mb-2" id="popis">Popis</h2>
-<p> <ul>
-  <li>délka těla: 12–14 cm</li>
-  <li>rozpětí křídel: 22 cm</li>
- <li>hmotnost: 16–18 g</li> 
-</ul>
-  Červenka obecná je velká asi jako vrabec domácí. Má kulovité tělo s dlouhým ocasem a končetinami a krátkými křídly a zašpičatělým zobákem.
-   Svrchu je světle hnědá, zespodu modrošedá a bílá, na hrdle a na obličeji má nápadnou rezavočervenou náprsenku. Oči a zobák jsou černé, 
-   končetiny šedé. Jednotlivá pohlaví se zbarvením neliší. Mladí ptáci postrádají rezavočervenou náprsenku a mají nevýrazné skvrnění</p>
-
-   <h2 class="h3 mb-2" id="rozmnozovani">Rozmnožování</h2>
-   <img class="img-thumbnail float-left mr-3 mt-2 cervenka_img04" src="img/cervenka/cervenka04.png" alt="young">
- <p>  V Evropě hnízdí od dubna do července. Během námluv jsou samci vysoce teritoriální a pokud rival překročí hranice jejich teritoria, 
-   načepýří peří, hlasitě křičí a do rivala neohroženě klovou. Občas byly zaznamenány případy, kdy samec červenky obecné napadl jiného 
-   stejně velkého ptáka, který vnikl za hranice jeho teritoria.<br>
-Samice klade do miskovitého hnízda z mechu, listí a trávy (umístěného v dutinách stromů, zemních polodutinách, porostu popínavých rostlin
- nebo v dřevěných budkách ve výšce pod 4 m) 5–7 (2–8) bílých, červeně skvrnitých vajec o velikosti 20 × 15 mm. Ročně mívá obvykle dvě snůšky,
-  při ztrátě jedné z nich zahnízďuje většinou ještě jednou. Inkubační doba je 13–14 dní. Na vejcích sedí pouze samice. Mláďata opouštějí
-   hnízdo po 12–15 dnech. První oranžovočervená pera na hrudi se jim začínají objevovat po 2–3 měsících; stejně jako dospělci jsou zbarveni 
-   až po dalších třech měsících. Do hnízda červenky často klade vejce kukačka. <br>
-V přírodě se průměrně dožívá jednoho roku. Nejvyšší naměřený věk červenky obecné byl 12 let </p>
-<h2 class="h3 mb-2" id="prostredi">Prostředí</h2>
-<p>Červenka obecná celoročně žije samotářsky, a to v lesích všeho druhu, zejména s bohatším podrostem a členitým terénem, dále v remízcích, 
-  větších porostech křovin a ve starších parcích a zahradách. Na tahu často v zahradách nebo břehových porostech. (Bellmann uvádí, že se ráda 
-  zdržuje v křovinách a živých plotech, že přilétá i na zoraná pole nebo se drží v blízkosti divokých prasat, kde sezobává vyryté živočichy, 
-  a objevuje se i ve městech.)</p>
-  <img class="img-thumbnail float-right ml-3 mt-2 cervenka_img05" src="img/cervenka/cervenka05.png" alt="food">
-  <h2 class="h3 mb-2" id="potrava">Potrava</h2>
-<p>Živí se drobným hmyzem a jeho larvami, pavoukovci i jinými členovci, v létě a na podzim i rostlinnou stravou (např. plody bezu, tisu).</p>
-
-
-
-    </div>
-
-    <aside class="col-lg-4">
-      <div class="row">
-
-
- <aside class="col-12 mb-3 text-center d-none d-lg-block">
-<ul class="list-group">
-  <a href="#rozsireni" class="list-group-item list-group-item-action">Rozšíření</a>
-  <a href="#popis" class="list-group-item list-group-item-action">Popis</a>
-  <a href="#rozmnozovani" class="list-group-item list-group-item-action">Rozmnožování</a>
-  <a href="#prostredi" class="list-group-item list-group-item-action">Prostředí</a>
-  <a href="#potrava" class="list-group-item list-group-item-action">Potrava</a>
-</ul>
-</aside>
-
-
-        <aside class="col-sm-12 col-md-6 col-lg-12">
-          <figure>
-          <img class="img-thumbnail d-block mx-auto" src="img/cervenka/cervenka01.png">
-            <figcaption class="text-center">Cervenka</figcaption>
-           </figure>
+      <div class="container">
+        <div class="row">
+          <aside class="col-12 text-center my-5">
+            <div id="change_banner" class="fluid"></div>
+          </aside>
+          <aside class="col-12 mb-2 text-center d-lg-none" id="small_menu">
+            <ul class="list-group">
+              <a href="#rozsireni" class="list-group-item list-group-item-action">Rozšíření</a>
+              <a href="#popis" class="list-group-item list-group-item-action">Popis</a>
+              <a href="#rozmnozovani" class="list-group-item list-group-item-action">Rozmnožování</a>
+              <a href="#prostredi" class="list-group-item list-group-item-action">Prostředí</a>
+              <a href="#potrava" class="list-group-item list-group-item-action">Potrava</a>
+            </ul>
+          </aside>
+          <div class="col-lg-8 bg-white text-body mb-3 my_article">
+            <h1 class="h2 font-weight-bold text-uppercase ml-0 mb-4 text-center text-md-left">Cervenka</h1>
+            <h2 class="h3 mb-2" id="rozsireni">Rozšíření</h2>
+            <p>Obývá většinu Evropy (kromě severu Skandinávie) od Irska přes Ural až po západní Sibiř. Jižní hranice
+              rozšíření probíhá od severozápadní
+              Afriky do Malé Asie. Částečně tažný druh, zimující v západní a jižní Evropě a na jihozápadě Asie. Populace
+              z jižní a západní Evropy jsou
+              většinou stálé. Evropská populace se v posledních letech mírně zvětšila a je považována za stabilní – čítá
+              více než 43 mil. párů </p>
+            <img class="img-thumbnail  mr-3 mt-2 mb-4 cervenka_img03" src="img/cervenka/cervenka03.png" alt="mapa">
+            <h3 class="h5 mb-2">Výskyt v Česku</h3>
+            <p>V České republice pravidelně hnízdí, protahuje; někdy zimuje (1000–2000 jedinců). Žije na celém území od
+              nížin po horní hranici lesa v
+              horách. Početnost podle Hudce a kol. (1995) je 500 000 až 1 mil. hnízdících párů. Početnost v letech
+              2001–2003 je shodná.[4] V ČR patří mezi
+              15 nejběžnějších ptáků.</p>
+            <h2 class="h3 mb-2" id="popis">Popis</h2>
+            <p>
+            <ul>
+              <li>délka těla: 12–14 cm</li>
+              <li>rozpětí křídel: 22 cm</li>
+              <li>hmotnost: 16–18 g</li>
+            </ul>
+            Červenka obecná je velká asi jako vrabec domácí. Má kulovité tělo s dlouhým ocasem a končetinami a krátkými
+            křídly a zašpičatělým zobákem.
+            Svrchu je světle hnědá, zespodu modrošedá a bílá, na hrdle a na obličeji má nápadnou rezavočervenou
+            náprsenku. Oči a zobák jsou černé,
+            končetiny šedé. Jednotlivá pohlaví se zbarvením neliší. Mladí ptáci postrádají rezavočervenou náprsenku a
+            mají nevýrazné skvrnění</p>
+            <h2 class="h3 mb-2" id="rozmnozovani">Rozmnožování</h2>
+            <img class="img-thumbnail float-left mr-3 mt-2 cervenka_img04" src="img/cervenka/cervenka04.png"
+              alt="young">
+            <p> V Evropě hnízdí od dubna do července. Během námluv jsou samci vysoce teritoriální a pokud rival překročí
+              hranice jejich teritoria,
+              načepýří peří, hlasitě křičí a do rivala neohroženě klovou. Občas byly zaznamenány případy, kdy samec
+              červenky obecné napadl jiného
+              stejně velkého ptáka, který vnikl za hranice jeho teritoria.<br>
+              Samice klade do miskovitého hnízda z mechu, listí a trávy (umístěného v dutinách stromů, zemních
+              polodutinách, porostu popínavých rostlin
+              nebo v dřevěných budkách ve výšce pod 4 m) 5–7 (2–8) bílých, červeně skvrnitých vajec o velikosti 20 × 15
+              mm. Ročně mívá obvykle dvě snůšky,
+              při ztrátě jedné z nich zahnízďuje většinou ještě jednou. Inkubační doba je 13–14 dní. Na vejcích sedí
+              pouze samice. Mláďata opouštějí
+              hnízdo po 12–15 dnech. První oranžovočervená pera na hrudi se jim začínají objevovat po 2–3 měsících;
+              stejně jako dospělci jsou zbarveni
+              až po dalších třech měsících. Do hnízda červenky často klade vejce kukačka. <br>
+              V přírodě se průměrně dožívá jednoho roku. Nejvyšší naměřený věk červenky obecné byl 12 let </p>
+            <h2 class="h3 mb-2" id="prostredi">Prostředí</h2>
+            <p>Červenka obecná celoročně žije samotářsky, a to v lesích všeho druhu, zejména s bohatším podrostem a
+              členitým terénem, dále v remízcích,
+              větších porostech křovin a ve starších parcích a zahradách. Na tahu často v zahradách nebo břehových
+              porostech. (Bellmann uvádí, že se ráda
+              zdržuje v křovinách a živých plotech, že přilétá i na zoraná pole nebo se drží v blízkosti divokých
+              prasat, kde sezobává vyryté živočichy,
+              a objevuje se i ve městech.)</p>
+            <img class="img-thumbnail float-right ml-3 mt-2 cervenka_img05" src="img/cervenka/cervenka05.png"
+              alt="food">
+            <h2 class="h3 mb-2" id="potrava">Potrava</h2>
+            <p>Živí se drobným hmyzem a jeho larvami, pavoukovci i jinými členovci, v létě a na podzim i rostlinnou
+              stravou (např. plody bezu, tisu).</p>
+          </div>
+          <aside class="col-lg-4">
+            <div class="row">
+              <aside class="col-12 mb-3 text-center d-none d-lg-block">
+                <ul class="list-group">
+                  <a href="#rozsireni" class="list-group-item list-group-item-action">Rozšíření</a>
+                  <a href="#popis" class="list-group-item list-group-item-action">Popis</a>
+                  <a href="#rozmnozovani" class="list-group-item list-group-item-action">Rozmnožování</a>
+                  <a href="#prostredi" class="list-group-item list-group-item-action">Prostředí</a>
+                  <a href="#potrava" class="list-group-item list-group-item-action">Potrava</a>
+                </ul>
+              </aside>
+              <aside class="col-sm-12 col-md-6 col-lg-12">
+                <figure>
+                  <img class="img-thumbnail d-block mx-auto" src="img/cervenka/cervenka01.png">
+                  <figcaption class="text-center">Cervenka</figcaption>
+                </figure>
+              </aside>
+              <aside class="col-sm-12 col-md-6 col-lg-12">
+                <figure>
+                  <img class="img-thumbnail d-block mx-auto" src="img/cervenka/cervenka02.png">
+                  <figcaption class="text-center">Vajicka</figcaption>
+                </figure>
+              </aside>
+              <aside class="col-12">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-12">
+                    <h3 class="h4 my-2">Birds</h3>
+                    <ul class="list-inline text-justify" id="menu_birds">
+                      <li class="list-inline-item">Vlastovka</li>
+                      <a href="cervenka.html" class="active">
+                        <li class="list-inline-item">Cervenka</li>
+                      </a>
+                      <a href="#">
+                        <li class="list-inline-item">Sojka</li>
+                      </a>
+                      <li class="list-inline-item">Stehlik</li>
+                      <li class="list-inline-item">Drozd</li>
+                      <li class="list-inline-item">Kralicek</li>
+                      <li class="list-inline-item">Konipasek</li>
+                      <li class="list-inline-item">Brkoslav</li>
+                      <li class="list-inline-item">Cizek</li>
+                      <li class="list-inline-item">Rehek</li>
+                      <li class="list-inline-item">Hyl</li>
+                      <li class="list-inline-item">Spacek</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-lg-12">
+                    <h3 class="h4 my-2">Menu</h3>
+                    <ol class="list-unstyled ml-2">
+                      <li>About</li>
+                      <li>Our Birds</li>
+                      <li>Projects</li>
+                      <ul>
+                        <li>2017</li>
+                        <li>2018</li>
+                        <li>2019</li>
+                      </ul>
+                      <li>Photos</li>
+                      <ul>
+                        <li>City</li>
+                        <li>Forest</li>
+                        <li>Sea</li>
+                      </ul>
+                      <li>Contact</li>
+                    </ol>
+                  </div>
+              </aside>
+          </aside>
+        </div>
         </aside>
-        <aside class="col-sm-12 col-md-6 col-lg-12">
-          <figure>
-             <img class="img-thumbnail d-block mx-auto" src="img/cervenka/cervenka02.png">
-            <figcaption class="text-center">Vajicka</figcaption>
-           </figure>
-        </aside>
-
-<aside class="col-12">
-
-  <div class="row">
-<div class="col-sm-6 col-lg-12">
-<h3 class="h4 my-2">Birds</h3>
-<ul class="list-inline text-justify" id="menu_birds">
-  <li class="list-inline-item">Vlastovka</li>
- <a href="cervenka.html" class="active"> <li class="list-inline-item">Cervenka</li> </a>
- <a href="#"> <li class="list-inline-item">Sojka</li> </a>
-  <li class="list-inline-item">Stehlik</li>
-  <li class="list-inline-item">Drozd</li>
-  <li class="list-inline-item">Kralicek</li>
-  <li class="list-inline-item">Konipasek</li>
-  <li class="list-inline-item">Brkoslav</li>
-  <li class="list-inline-item">Cizek</li>
-  <li class="list-inline-item">Rehek</li>
-  <li class="list-inline-item">Hyl</li>
-  <li class="list-inline-item">Spacek</li>
-  </ul>
-</div>
-
-<div class="col-sm-6 col-lg-12">
-  <h3 class="h4 my-2">Menu</h3>
-<ol class="list-unstyled ml-2">
-<li>About</li>
-<li>Our Birds</li>
-<li>Projects</li>
-<ul>
-<li>2017</li>
-<li>2018</li>
-<li>2019</li>
-</ul>
-<li>Photos</li>
-<ul>
-<li>City</li>
-<li>Forest</li>
-<li>Sea</li>
-</ul>
-<li>Contact</li>
-</ol>
-</div>
-</aside>
-
-</aside>
-
       </div>
-    </aside>
+      </div>
+    </article>
+  </main>
 
-  </div>
- </div>
-
-   </article>
-  
-
-</main>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-<script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 <!-- 
 https://cs.wikipedia.org/wiki/%C4%8Cervenka_obecn%C3%A1
