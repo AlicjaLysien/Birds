@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript">
-    var banner_number = Math.floor(Math.random() * 4) + 1;
-    function changebanner() {
-      banner_number++; if (banner_number > 4) banner_number = 1;
-      var banner_photo = "<img src=\"img/banner/banner0" + banner_number + ".png\"/ class=\"img-fluid\">";
-      document.getElementById("change_banner").innerHTML = banner_photo;
-      setTimeout("changebanner()", 10000);
+      var banner_number = Math.floor(Math.random() * 4);
+      var images = ["img/banner/banner01.png", "img/banner/banner02.png", "img/banner/banner03.png", "img/banner/banner04.png"]
+      function changebanner() {
+        banner_number++;
+        if (banner_number > 3) banner_number = 0;
+        document.getElementById("change_banner").src = images[banner_number];
+        setTimeout("changebanner()", 8000)
     }
   </script>
 </head>
@@ -75,20 +76,30 @@
   <main>
     <article>
       <div class="container">
-        <div class="row">
-          <aside class="col-12 text-center my-5">
-            <div id="change_banner" class="fluid"></div>
+        <div class="row mx-2">
+          <aside class="w-100 p-0 text-center my-3 my-lg-5 col-lg-12">
+            <img id="change_banner" src="" class="img-fluid" alt="banner">
           </aside>
-          <aside class="col-12 mb-2 text-center d-lg-none" id="small_menu">
-            <ul class="list-group">
-              <a href="#rozsireni" class="list-group-item list-group-item-action">Rozšíření</a>
-              <a href="#popis" class="list-group-item list-group-item-action">Popis</a>
-              <a href="#rozmnozovani" class="list-group-item list-group-item-action">Rozmnožování</a>
-              <a href="#prostredi" class="list-group-item list-group-item-action">Prostředí</a>
-              <a href="#potrava" class="list-group-item list-group-item-action">Potrava</a>
+          <aside class="w-100 mb-3 text-center d-lg-none" id="small_menu">
+            <ul class="list-group list-unstyled">
+              <li>
+                <a href="#rozsireni" class="list-group-item list-group-item-action">Rozšíření</a>
+              </li>
+              <li>
+                <a href="#popis" class="list-group-item list-group-item-action">Popis</a>
+              </li>
+              <li>
+                <a href="#rozmnozovani" class="list-group-item list-group-item-action">Rozmnožování</a>
+              </li>
+              <li>
+                <a href="#prostredi" class="list-group-item list-group-item-action">Prostředí</a>
+              </li>
+              <li>
+                <a href="#potrava" class="list-group-item list-group-item-action">Potrava</a>
+              </li>
             </ul>
           </aside>
-          <div class="col-lg-8 bg-white text-body mb-3 my_article">
+          <article class="col-lg-8 text-body bg-white mb-3 my_article">
             <h1 class="h2 font-weight-bold text-uppercase ml-0 mb-4 text-center text-md-left">Cervenka</h1>
             <h2 class="h3 mb-2" id="rozsireni">Rozšíření</h2>
             <p>Obývá většinu Evropy (kromě severu Skandinávie) od Irska přes Ural až po západní Sibiř. Jižní hranice
@@ -97,7 +108,7 @@
               z jižní a západní Evropy jsou
               většinou stálé. Evropská populace se v posledních letech mírně zvětšila a je považována za stabilní – čítá
               více než 43 mil. párů </p>
-            <img class="img-thumbnail  mr-3 mt-2 mb-4 cervenka_img03" src="img/cervenka/cervenka03.png" alt="mapa">
+            <img class="img-thumbnail mr-3 mt-2 mb-4 cervenka_img03" src="img/cervenka/cervenka03.png" alt="mapa">
             <h3 class="h5 mb-2">Výskyt v Česku</h3>
             <p>V České republice pravidelně hnízdí, protahuje; někdy zimuje (1000–2000 jedinců). Žije na celém území od
               nížin po horní hranici lesa v
@@ -148,25 +159,35 @@
             <h2 class="h3 mb-2" id="potrava">Potrava</h2>
             <p>Živí se drobným hmyzem a jeho larvami, pavoukovci i jinými členovci, v létě a na podzim i rostlinnou
               stravou (např. plody bezu, tisu).</p>
-          </div>
+          </article>
           <aside class="col-lg-4">
             <div class="row">
-              <aside class="col-12 mb-3 text-center d-none d-lg-block">
-                <ul class="list-group">
-                  <a href="#rozsireni" class="list-group-item list-group-item-action">Rozšíření</a>
-                  <a href="#popis" class="list-group-item list-group-item-action">Popis</a>
-                  <a href="#rozmnozovani" class="list-group-item list-group-item-action">Rozmnožování</a>
-                  <a href="#prostredi" class="list-group-item list-group-item-action">Prostředí</a>
-                  <a href="#potrava" class="list-group-item list-group-item-action">Potrava</a>
+              <aside class="col-12 mb-3 text-center d-none pr-0 d-lg-block">
+                <ul class="list-group list-unstyled">
+                  <li>
+                    <a href="#rozsireni" class="list-group-item list-group-item-action">Rozšíření</a>
+                  </li>
+                  <li>
+                    <a href="#popis" class="list-group-item list-group-item-action">Popis</a>
+                  </li>
+                  <li>
+                    <a href="#rozmnozovani" class="list-group-item list-group-item-action">Rozmnožování</a>
+                  </li>
+                  <li>
+                    <a href="#prostredi" class="list-group-item list-group-item-action">Prostředí</a>
+                  </li>
+                  <li>
+                    <a href="#potrava" class="list-group-item list-group-item-action">Potrava</a>
+                  </li>
                 </ul>
               </aside>
-              <aside class="col-sm-12 col-md-6 col-lg-12">
+              <aside class="col-sm-12 col-md-6 col-lg-12 pr-lg-0">
                 <figure>
                   <img class="img-thumbnail d-block mx-auto" src="img/cervenka/cervenka01.png">
                   <figcaption class="text-center">Cervenka</figcaption>
                 </figure>
               </aside>
-              <aside class="col-sm-12 col-md-6 col-lg-12">
+              <aside class="col-sm-12 col-md-6 col-lg-12 pr-lg-0">
                 <figure>
                   <img class="img-thumbnail d-block mx-auto" src="img/cervenka/cervenka02.png">
                   <figcaption class="text-center">Vajicka</figcaption>
